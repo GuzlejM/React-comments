@@ -6,12 +6,6 @@ import faker from 'faker';
 const CardDetail = props => {
     return (
       <div className="p-2">
-          <div className="photo-wrapper p-2">
-              <img 
-                className="w-32 h-32 rounded-full mx-auto" 
-                src={ props.avatar } 
-                alt={ props.author } />
-          </div>
         <h3 className="text-center text-xl text-gray-900 font-medium leading-8">
           {props.author}
         </h3>
