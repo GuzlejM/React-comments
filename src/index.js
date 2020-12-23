@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import faker from 'faker';
-import CommentDetail from './CommentDetail';
+import ApprovalCard from './ApprovalCard';
 
 // TODO 
     // Refactor separate to components,
@@ -10,19 +10,15 @@ import CommentDetail from './CommentDetail';
 const App = () => {
   return (      
       <div className="flex sm:flex-nowrap md:flex-wrap flex-col md:flex-row items-center md:h-screen w-full justify-around">
-        <CommentDetail 
-          author={`${faker.name.firstName()} ${faker.name.lastName()}`}
+        <ApprovalCard
           avatar={ faker.image.people() }
         />
-        <CommentDetail 
-          author={`${faker.name.firstName()} ${faker.name.lastName()}`}
+        <ApprovalCard
           avatar={ faker.image.animals() }
 
         />
-        <CommentDetail 
-          author={`${faker.name.firstName()} ${faker.name.lastName()}`}
+        <ApprovalCard
           avatar={ faker.image.abstract() }
-
         />
     </div>
   );
