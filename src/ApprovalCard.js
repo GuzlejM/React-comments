@@ -1,21 +1,30 @@
 import React from 'react';
-import faker from 'faker';
-import CardDetail from './CardDetail';
-import RoundedProfileImg from './RoundedProfileImg';
-
 
 const ApprovalCard = () => {
     return (
-        <div className="mt-5 w-64 h-96">
-        <div className="bg-white shadow-xl rounded-lg py-3">
-          <RoundedProfileImg 
-          avatar={faker.image.people()}
-          />
-          <CardDetail
-            author={`${faker.name.firstName()} ${faker.name.lastName()}`}
-          />
+        <div className="w-full text-center">
+          <div>Are you sure ?</div>
+          <div className="p-4">
+            <div className="flex justify-around">
+              <button 
+                className="
+                  inline-block px-6 py-2 text-xs font-medium leading-6 
+                  text-center text-white uppercase transition bg-green-500 
+                  rounded shadow ripple hover:shadow-lg hover:bg-green-600 
+                  focus:outline-none">
+                Accept
+              </button>
+              <button 
+                className="
+                inline-block px-6 py-2 text-xs font-medium leading-6 text-center 
+                text-white uppercase transition bg-red-500 rounded shadow ripple 
+                hover:shadow-lg hover:bg-red-600 focus:outline-none  
+                ">
+                Reject
+              </button>
+            </div>
+          </div>
         </div>
-      </div>
     );
 };
 
