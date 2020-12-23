@@ -1,9 +1,9 @@
 import React from 'react';
 
-const ApprovalCard = () => {
+const ApprovalCard = (props) => {
     return (
         <div className="w-full text-center">
-          <div>Are you sure ?</div>
+          <div>{ props.children }</div>
           <div className="p-4">
             <div className="flex justify-around">
               <button 

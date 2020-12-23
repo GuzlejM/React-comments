@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Card from './Card';
 
+
 // TODO 
     // Refactor separate to components,
     // Import faker databases

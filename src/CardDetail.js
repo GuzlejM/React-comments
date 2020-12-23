@@ -1,11 +1,11 @@
 import React from 'react';
 import faker from 'faker';
-
-
+import RoundedProfileImg from './RoundedProfileImg';
 
 const CardDetail = props => {
     return (
       <div className="p-2">
+        <RoundedProfileImg avatar={ faker.image.cats() }/>
         <h3 className="text-center text-xl text-gray-900 font-medium leading-8">
           {props.author}
         </h3>
